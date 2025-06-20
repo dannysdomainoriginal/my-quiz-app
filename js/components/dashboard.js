@@ -16,8 +16,10 @@ quizTypeSelect.onchange = () => {
     difficultyGroup.classList.toggle("hidden", value === "pre");
 };
 
+let quizConfirm = document.querySelector('[quiz-app]')
+
 // Quiz Page
-if(location.href.includes('quiz')){
+if(quizConfirm){
     const allLinks = document.querySelectorAll('a')
 
     allLinks.forEach(link => {
