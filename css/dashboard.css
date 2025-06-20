@@ -96,14 +96,25 @@ section .container, main .container {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
+@media (max-width: 760px) {
+  .main h1 {
+    font-size: 2rem;
+  }
+}
 .main h1 + p {
   font-family: "Lexend", sans-serif;
   color: rgb(96, 122, 251);
   margin: 0.5rem 0 1.5rem;
 }
+@media (max-width: 760px) {
+  .main h1 + p {
+    font-size: 0.9rem;
+  }
+}
 .main .btn-container {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 .main .btn {
   background-color: rgb(96, 122, 251);

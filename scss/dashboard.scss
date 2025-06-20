@@ -7,17 +7,26 @@
         font-weight: 500;
 
         font-family: $heading-font;
+
+        @media (max-width: 760px) {
+            font-size: 2rem;
+        }
     }
 
     h1 + p{
         font-family: $legend-font;
         color: $theme-color;
         margin: .5rem 0 1.5rem;
+
+        @media (max-width: 760px) {
+            font-size: .9rem;
+        }
     }
 
     .btn-container{
         display: flex;
         gap: 1rem;
+        flex-wrap: wrap;
     }
 
     .btn{

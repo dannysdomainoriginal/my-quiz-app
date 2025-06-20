@@ -20,8 +20,9 @@
 - [ ] Add loading screen styling to a partial and import into _component.scss
 
 ## Current To Dos
-- [ ] Login & SignUp Page
-- [ ] OOP Frontend Setup
+- [x] Login & SignUp Page
+- [ ] Turn responsive
+- [ ] OOP Frontend Setup for quiz and then user
 - [ ] Push to github
 - [ ] Deploy
 - [ ] Create new branch - fullstack
@@ -30,3 +31,8 @@
 - [ ] !!!! Make sure not to merge the two branches
 - [ ] Send a welcome email after sign up
 - [ ] Send a forgot password link to user email, on forget password
+
+## Do Now
+- [ ] Add labels to quiz modal
+- [ ] Make take quiz button work on all pages
+- [ ] Make menu responsive - bottom tabs or side menu

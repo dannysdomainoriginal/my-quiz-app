@@ -96,6 +96,14 @@ section .container, main .container {
   font-weight: 500;
   font-family: "Lexend", sans-serif;
 }
+@media (max-width: 760px) {
+  .main .container > h1 {
+    font-size: 2rem;
+  }
+}
+.main .container h1 + p {
+  line-height: 1.5;
+}
 .main .container .profile-box {
   margin: 2rem 0;
   height: 8rem;
