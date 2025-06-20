@@ -32,14 +32,14 @@ body .mobile-nav {
 section .container, main .container {
   padding: 0 5rem;
 }
-@media screen and (max-width: 760px) {
-  section .container, main .container {
-    padding: 0 1.5rem;
-  }
-}
 @media screen and (max-width: 900px) {
   section .container, main .container {
     padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  section .container, main .container {
+    padding: 0 1.5rem;
   }
 }
 
@@ -228,6 +228,12 @@ select {
   cursor: pointer;
 }
 
+.modal label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  display: none;
+}
+
 /* Hide element */
 .hidden {
   display: none;
@@ -279,7 +285,7 @@ select {
   justify-content: center;
 }
 .main .container .account-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -290,7 +296,7 @@ select {
   }
 }
 .main .container .account-info h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 3000;
   font-family: "Lexend", sans-serif;
   color: rgb(106, 116, 129);

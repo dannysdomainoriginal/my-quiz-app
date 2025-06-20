@@ -72,6 +72,12 @@ select {
     cursor: pointer;
 }
 
+.modal label{
+    margin-bottom: .5rem;
+    display: inline-block;
+    display: none;
+}
+
 /* Hide element */
 .hidden {
     display: none;

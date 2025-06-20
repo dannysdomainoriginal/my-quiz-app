@@ -53,12 +53,12 @@ body{
 section .container, main .container{
     padding: 0 5rem;
 
-    @media screen and (max-width: 760px) {
-        padding: 0 1.5rem;
-    }
-
     @media screen and (max-width: 900px) {
         padding: 0 3rem;
+    }
+
+    @media screen and (max-width: 760px) {
+        padding: 0 1.5rem;
     }
 }
 

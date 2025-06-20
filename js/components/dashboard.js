@@ -2,18 +2,11 @@
 const modal = document.getElementById("quizModal");
 
 const closeBtn = document.getElementById("closeModalBtn");
-const quizTypeSelect = document.getElementById("quizType");
-const difficultyGroup = document.getElementById("difficultyGroup");
 
 
 closeBtn.onclick = () => modal.classList.remove("active");
 window.onclick = (e) => {
     if (e.target === modal) modal.classList.remove("active");
-};
-
-quizTypeSelect.onchange = () => {
-    const value = quizTypeSelect.value;
-    difficultyGroup.classList.toggle("hidden", value === "pre");
 };
 
 let quizConfirm = document.querySelector('[quiz-app]')

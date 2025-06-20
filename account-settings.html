@@ -69,7 +69,7 @@
                 </div>
 
                 <button type="submit" class="btn submit-btn">Save Changes</button>
-            </div>
+            </form>
         </div>
     </main>
 
@@ -79,53 +79,55 @@
         <div class="modal-content">
             <button class="close" id="closeModalBtn">&times;</button>
             <h2>Customize Your Quiz</h2>
-            <form>
+            <form id="quiz" action="/quiz.html">
                 <!-- Quiz Type Dropdown -->
                 <div class="form-group">
-                    <select id="quizType">
-                        <option>Choose Quiz Type</option>
-                        <option value="ai">AI</option>
-                        <option value="pre">Pre-generated Questions</option>
-                    </select>
-                </div>
-
-                <!-- Topic -->
-                <div class="form-group">
-                    <select>
-                        <option>Select Topic</option>
-                        <option>Math</option>
-                        <option>Science</option>
-                        <option>History</option>
+                    <label for="quiz-type">Choose Your Quiz Type</label>
+                    <select id="quiz-type" name="quiz-type">
+                        <option value="pre-gen">Pre-generated</option>
+                        <option value="ai-gen">AI Generated</option>
                     </select>
                 </div>
 
                 <!-- Question Count -->
                 <div class="form-group">
-                    <select>
-                        <option>Number of Questions</option>
-                        <option>5</option>
-                        <option>10</option>
-                        <option>15</option>
+                    <label for="no-of-questions">Number Of Questions</label>
+                    <select id="no-of-questions" name="no-of-questions">
+                        <option value="10">10 questions</option>
+                        <option value="15">15 questions</option>
+                        <option value="20">20 questions</option>
+                        <option value="30">30 questions</option>
                     </select>
                 </div>
 
-                <!-- Difficulty (conditionally shown) -->
-                <div class="form-group" id="difficultyGroup">
-                    <select>
-                        <option>Difficulty Level (AI Quizzes)</option>
-                        <option>Easy</option>
-                        <option>Medium</option>
-                        <option>Hard</option>
+                <!-- Category -->
+                <div class="form-group">
+                    <label for="category">Choose A Category</label>
+                    <select id="category" name="category">
+                        <option value="s-eng">Software Engineering</option>
+                        <option value="c-sci">Computer Science</option>
+                        <option value="i-tech">Information Tech</option>
+                    </select>
+                </div>
+
+                <!-- Difficulty -->
+                <div class="form-group">
+                    <label for="difficulty">Difficulty Level</label>
+                    <select id="difficulty" name="difficulty">
+                        <option value="Highschool">Highschool</option>
+                        <option value="College" selected>College</option>
+                        <option value="Career">Career</option>
                     </select>
                 </div>
 
                 <!-- Time Limit -->
                 <div class="form-group">
-                    <select>
-                        <option>Time Limit</option>
-                        <option>1 min</option>
-                        <option>5 min</option>
-                        <option>10 min</option>
+                    <label for="time-limit">Time Limit</label>
+                    <select id="time-limit" name="time-limit">
+                        <option value="01:00">1 min</option>
+                        <option value="02:30">2 mins 30s</option>
+                        <option value="05:00">5 mins</option>
+                        <option value="10:00">10 mins</option>
                     </select>
                 </div>
 

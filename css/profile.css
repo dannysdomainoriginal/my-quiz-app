@@ -32,14 +32,14 @@ body .mobile-nav {
 section .container, main .container {
   padding: 0 5rem;
 }
-@media screen and (max-width: 760px) {
-  section .container, main .container {
-    padding: 0 1.5rem;
-  }
-}
 @media screen and (max-width: 900px) {
   section .container, main .container {
     padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  section .container, main .container {
+    padding: 0 1.5rem;
   }
 }
 
@@ -228,6 +228,12 @@ select {
   cursor: pointer;
 }
 
+.modal label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  display: none;
+}
+
 /* Hide element */
 .hidden {
   display: none;
@@ -246,6 +252,11 @@ select {
 .main .container h1 + p {
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 760px) {
+  .main .container h1 + p {
+    font-size: 0.9rem;
+  }
 }
 .main .container .profile-box {
   margin: 2rem 0;
@@ -267,6 +278,11 @@ select {
   font-family: "Lexend", sans-serif;
   font-weight: 500;
   margin-top: -10px;
+}
+@media (max-width: 760px) {
+  .main .container .profile-box .profile-text h4 {
+    font-size: 1.3rem;
+  }
 }
 .main .container .profile-box .profile-text small {
   color: #787481;
