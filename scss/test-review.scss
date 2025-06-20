@@ -11,6 +11,10 @@
 
             font-family: $legend-font;
             margin-bottom: 1rem;
+
+            @media (max-width: 760px) {
+                font-size: 2rem;
+            }
         }
 
         .above-progress-bar{

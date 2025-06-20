@@ -32,6 +32,17 @@ $transition: .4s ease;
 
 body{
     font-family: $default-font;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .main{
+        flex: 5;
+    }
+
+    .mobile-nav{
+        padding: 2.5rem 0;
+    }
 }
 
 .container{
@@ -39,8 +50,16 @@ body{
     margin: auto;
 }
 
-section .container, main .container {
+section .container, main .container{
     padding: 0 5rem;
+
+    @media screen and (max-width: 760px) {
+        padding: 0 1.5rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 0 3rem;
+    }
 }
 
 .nav{
@@ -58,17 +77,26 @@ section .container, main .container {
         justify-content: space-between;
 
         .logo-container{
-            display: flex;
-            align-items: center;
 
-            gap: .5rem;
+            a{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                gap: .5rem;
+            }
 
+            .logo{
+                display: flex;
+
+            }
             img{ width: 30px;}
 
-            h3{ font-weight: bold; font-size: 1.2rem; font-family: $heading-font;}
+            h3{ font-weight: bold; font-size: 1.2rem; font-family: $heading-font;
+                display: inline;
+            }
         }
 
-        a{ font-size: .9rem; font-family: $heading-font; transition: color $transition;}
+        a{ font-size: .9rem; font-family: $legend-font; transition: color $transition;}
 
         a:hover{ color: $theme-color;}
 
@@ -100,9 +128,57 @@ section .container, main .container {
     }
 }
 
+.mobile-nav{
+    height: 4rem;
+    border-top: 1px solid $gray-color;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    display: none;
+    // box-shadow: 0 -1px 2px rgba($color: #000000, $alpha: .2);
+
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+        font-family: $legend-font;
+        // gap: .2rem;
+
+        li a{
+            display: flex;
+            flex-direction: column;
+            font-size: .9rem;
+            text-align: center;
+            gap: .25rem;
+
+            i{
+                font-size: 1.5rem
+            }
+        }
+    }
+}
+
+@media (max-width: 779px) {
+    .mobile-nav {display: block}
+    // .main{margin-top: 2rem}
+
+    .nav .container {
+        .hidden-mobile{
+            display: none;
+        }
+
+        .menu button{
+            border-radius: 50%;
+        }
+    }
+}
+
 .page-title{
     font-size: 2rem;
     font-weight: 500;
     font-family: $heading-font;
     margin-bottom: .7rem;
 }
+
+@import './modal';

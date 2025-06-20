@@ -7,6 +7,10 @@
             font-weight: 500;
 
             font-family: $legend-font;
+
+            @media (max-width: 760px) {
+                font-size: 2rem;
+            }
         }
 
         .btn{
@@ -30,6 +34,7 @@
         .account-box{
             display: flex;
             gap: 2rem;
+            align-items: center;
 
             margin: 2rem 0;
 
@@ -37,6 +42,11 @@
                 border-radius: 50%;
                 width: 150px;
                 aspect-ratio: 1/1;
+
+                @media (max-width: 760px) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
 
@@ -51,6 +61,10 @@
                 font-weight: 500;
                 font-family: $heading-font;
                 margin: 0;
+
+                @media (max-width: 760px) {
+                    font-size: 1.2rem;
+                }
             }
 
             h4{
@@ -59,6 +73,10 @@
                 font-family: $legend-font;
                 color: $theme-gray;
                 margin-bottom: 1rem;
+
+                @media (max-width: 760px) {
+                    font-size: 1rem;
+                }
             }
 
             .btn{

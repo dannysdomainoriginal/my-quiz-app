@@ -15,7 +15,7 @@
      <nav class="nav">
         <div class="container nav-container">
             <div class="logo-container">
-                <a href="./get-started.html">
+                <a href="./dashboard.html">
                     <div class="logo">
                         <img src="./images/logo.png" alt="" width="30px">
                     </div>
@@ -23,13 +23,13 @@
                 </a>
             </div>
             <div class="menu">
-                <ul class="menu-container">
+                <ul class="menu-container hidden-mobile">
                     <li><a href="./dashboard.html">Dashboard</a></li>
                     <li><a href="./quiz.html">Take A Quiz</a></li>
                     <li><a href="./leaderboard.html">Leaderboard</a></li>
                     <li><a href="./profile.html">Profile</a></li>
                 </ul>
-                    <a href="./account-settings.html"><button class="settings-btn"><i class="uil uil-setting"></i></button></a>
+                    <a href="./account-settings.html" class="hidden-mobile"><button class="settings-btn"><i class="uil uil-setting"></i></button></a>
                     <button class="theme-toggle-btn"><i class="uil uil-brightness"></i></button>
                     <a href="./profile.html"><img src="./images/avatar.jpg" alt=""></a>
             </div>
@@ -115,5 +115,97 @@
             </div>
         </div>
     </main>
+
+    <!-- ---------------------------------------------- MODAL ------------------------------------------- -->
+
+    <div class="modal" id="quizModal">
+        <div class="modal-content">
+            <button class="close" id="closeModalBtn">&times;</button>
+            <h2>Customize Your Quiz</h2>
+            <form>
+                <!-- Quiz Type Dropdown -->
+                <div class="form-group">
+                    <select id="quizType">
+                        <option>Choose Quiz Type</option>
+                        <option value="ai">AI</option>
+                        <option value="pre">Pre-generated Questions</option>
+                    </select>
+                </div>
+
+                <!-- Topic -->
+                <div class="form-group">
+                    <select>
+                        <option>Select Topic</option>
+                        <option>Math</option>
+                        <option>Science</option>
+                        <option>History</option>
+                    </select>
+                </div>
+
+                <!-- Question Count -->
+                <div class="form-group">
+                    <select>
+                        <option>Number of Questions</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                    </select>
+                </div>
+
+                <!-- Difficulty (conditionally shown) -->
+                <div class="form-group" id="difficultyGroup">
+                    <select>
+                        <option>Difficulty Level (AI Quizzes)</option>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </div>
+
+                <!-- Time Limit -->
+                <div class="form-group">
+                    <select>
+                        <option>Time Limit</option>
+                        <option>1 min</option>
+                        <option>5 min</option>
+                        <option>10 min</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="start-btn">Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <nav class="mobile-nav">
+        <ul class="container menu-container">
+            <li>
+                <a href="./dashboard.html">
+                    <i class="uil uil-house-user"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="./quiz.html">
+                    <i class="uil uil-edit"></i>
+                    <span>Take A Quiz</span>
+                </a>
+            </li>
+            <li>
+                <a href="./leaderboard.html">
+                    <i class="uil uil-trophy"></i>
+                    <span>Leaderboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="./account-settings.html">
+                    <i class="uil uil-setting"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/components/dashboard.js"></script>
 </body>
 </html>

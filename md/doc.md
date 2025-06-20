@@ -36,3 +36,4 @@
 - [ ] Add labels to quiz modal
 - [ ] Make take quiz button work on all pages
 - [ ] Make menu responsive - bottom tabs or side menu
+- [ ] Edit the padding of the containers
