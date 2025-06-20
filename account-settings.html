@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/settings.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" width="30px">
+                </div>
+                <h3>Quiz App</h3>
+            </div>
+            <div class="menu">
+                <ul class="menu-container">
+                    <li><a href="./dashboard">Dashboard</a></li>
+                    <li><a href="./quiz">Take A Quiz</a></li>
+                    <li><a href="./leaderboard">Leaderboard</a></li>
+                    <li><a href="./profile">Profile</a></li>
+                </ul>
+                    <button class="settings-btn"><i class="uil uil-setting"></i></button>
+                    <button class="theme-toggle-btn"><i class="uil uil-brightness"></i></button>
+                    <img src="./images/avatar.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container main-container">
+            <h1>Account Settings</h1>
+
+            <div class="account-box">
+                <img src="./images/avatar.jpg" alt="PROFILE IMG">
+                <div class="account-info">
+                    <h3>Charles Daniel</h3>
+                    <h4>@dannysdomain</h4>
+                    <p>
+                        <button class="btn btn-profile-change">Change Profile Image</button>
+                        <br>
+                        <small>PNG, JPG up to 2MB</small>
+                    </p>
+                </div>
+            </div>
+
+            <form class="account-form" action="/submit-settings">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Doe">
+                </div>
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="old-username">
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" placeholder="old password">
+                </div>
+
+                <button type="submit" class="btn submit-btn">Save Changes</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/components/update-profile-img.js"></script>
+    
+</body>
+</html>

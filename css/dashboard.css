@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section .container, main .container {
+  padding: 0 5rem;
+}
+
+.nav {
+  height: 3.75rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #E6E9F4;
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-container .logo-container img {
+  width: 30px;
+}
+.nav-container .logo-container h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.nav-container a {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.4s ease;
+}
+.nav-container a:hover {
+  color: rgb(96, 122, 251);
+}
+.nav-container .menu, .nav-container .menu-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-container .menu-container {
+  gap: 2rem;
+}
+.nav-container .menu-container {
+  display: flex;
+}
+.nav-container .menu img {
+  width: 40px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.nav-container .menu button {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: #E6E9F4;
+  cursor: pointer;
+}
+.nav-container .menu button i {
+  font-size: 1.2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.main h1 + p {
+  font-family: "Lexend", sans-serif;
+  color: rgb(96, 122, 251);
+  margin: 0.5rem 0 1.5rem;
+}
+.main .btn-container {
+  display: flex;
+  gap: 1rem;
+}
+.main .btn {
+  background-color: rgb(96, 122, 251);
+  height: 42px;
+  padding: 0 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+}
+.main .profile-btn, .main .premium-btn {
+  background: transparent;
+  color: black;
+  transition: background 0.4s ease-in;
+}
+.main .profile-btn:hover, .main .premium-btn:hover {
+  background-color: black;
+  color: white;
+}
+.main .premium-btn:hover {
+  background: linear-gradient(135deg, #ff8a00, #e52e71);
+}
+.main .subjects {
+  margin-bottom: 3rem;
+}
+.main .subjects h2 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.main .subjects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+  gap: 0.75rem;
+}
+.main .subjects-container .subject {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.main .subjects-container .subject .img-box {
+  width: 100%;
+  background: url("../images/maths.png") center center/cover no-repeat;
+  aspect-ratio: 1/1;
+  border-radius: 0.75rem;
+}
+.main .subjects-container .subject h4 {
+  font-weight: 500;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal h2 {
+  font-size: 22px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  color: #0f111a;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 14px 48px 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #d2d6e4;
+  background-color: #f9f9fb;
+  font-size: 16px;
+  color: #0f111a;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%2356618f' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M181.66 170.34a8 8 0 0 1 0 11.32l-48 48a8 8 0 0 1-11.32 0l-48-48a8 8 0 0 1 11.32-11.32L128 212.69l42.34-42.35a8 8 0 0 1 11.32 0ZM85.66 85.66 128 43.31l42.34 42.35a8 8 0 0 0 11.32-11.32l-48-48a8 8 0 0 0-11.32 0l-48 48a8 8 0 0 0 11.32 11.32Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 20px;
+}
+
+.start-btn {
+  background-color: #435ed4;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide element */
+.hidden {
+  display: none;
+}

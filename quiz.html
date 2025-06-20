@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/interface.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" width="30px">
+                </div>
+                <h3>Quiz App</h3>
+            </div>
+            <div class="menu">
+                <ul class="menu-container">
+                    <li><a href="./dashboard">Dashboard</a></li>
+                    <li><a href="./quiz">Take A Quiz</a></li>
+                    <li><a href="./leaderboard">Leaderboard</a></li>
+                    <li><a href="./profile">Profile</a></li>
+                </ul>
+                    <button class="settings-btn"><i class="uil uil-setting"></i></button>
+                    <button class="theme-toggle-btn"><i class="uil uil-brightness"></i></button>
+                    <img src="./images/avatar.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="main">
+        <div class="container main-container">
+            <div class="above-progress-bar">
+                <h4>Question 1 of 5</h4>
+                <span class="quiz-timer">05:00</span>
+            </div>
+
+            <div class="progress-bar"><div class="progress"></div></div>
+
+            <section class="quiz">
+                <h3 class="question">What is the capital of France?</h3>
+
+                <div class="quiz-container">
+                    <label for="option1">
+                        <input type="radio" name="quiz" id="option1">
+                        <p class="quiz-option" id="1">Paris</p>
+                    </label>
+                    <label for="option2">
+                        <input type="radio" name="quiz" id="option2">
+                        <p class="quiz-option" id="1">Paris</p>
+                    </label>
+                    <label for="option3">
+                        <input type="radio" name="quiz" id="option3">
+                        <p class="quiz-option" id="1">Paris</p>
+                    </label>
+                    <label for="option4">
+                        <input type="radio" name="quiz" id="option4">
+                        <p class="quiz-option" id="1">Paris</p>
+                    </label>
+                </div>
+
+            </section>
+
+            <div class="pagination">
+                <button class="btn prev-btn">Previous</button>
+                <button class="btn next-btn">Next</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

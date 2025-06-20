@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+     <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" width="30px">
+                </div>
+                <h3>Quiz App</h3>
+            </div>
+            <div class="menu">
+                <ul class="menu-container">
+                    <li><a href="./dashboard">Dashboard</a></li>
+                    <li><a href="./quiz">Take A Quiz</a></li>
+                    <li><a href="./leaderboard">Leaderboard</a></li>
+                    <li><a href="./profile">Profile</a></li>
+                </ul>
+                    <button class="settings-btn"><i class="uil uil-setting"></i></button>
+                    <button class="theme-toggle-btn"><i class="uil uil-brightness"></i></button>
+                    <img src="./images/avatar.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container main-container">
+            <h1>Your Profile</h1>
+            <p>Track your quiz progress and manage your account settings.</p>
+
+            <div class="profile-box">
+                <img src="./images/avatar.jpg" alt="PROFILE IMG">
+                <div class="profile-text">
+                    <h4>Charles Daniel</h4>
+                    <small>Joined 2025</small>
+                </div>
+            </div>
+
+            <h2>Overall Performance</h2>
+            <div class="data-boxes">
+                <div class="box">
+                    <p>Quizzes Taken</p>
+                    <h4>25</h4>
+                </div>
+                <div class="box">
+                    <p>Average Score</p>
+                    <h4>90%</h4>
+                </div>
+                <div class="box">
+                    <p>Completion Rate</p>
+                    <h4>85%</h4>
+                </div>
+            </div>
+
+
+            <h2>Past Quiz Results</h2>
+
+            <div class="results">
+                <table class="results-table">
+                    <thead>
+                    <tr>
+                        <th class="col-name">Quiz Name</th>
+                        <th class="col-score">Score</th>
+                        <th class="col-date">Date Taken</th>
+                        <th class="col-time">Time Spent</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-name">Math Quiz</td>
+                        <td class="col-score">90%</td>
+                        <td class="col-date">2023-08-01</td>
+                        <td class="col-time">35 min</td>
+                    </tr>
+                    <tr>
+                        <td class="col-name">Math Quiz</td>
+                        <td class="col-score">90%</td>
+                        <td class="col-date">2023-08-01</td>
+                        <td class="col-time">35 min</td>
+                    </tr>
+                    <tr>
+                        <td class="col-name">Math Quiz</td>
+                        <td class="col-score">90%</td>
+                        <td class="col-date">2023-08-01</td>
+                        <td class="col-time">35 min</td>
+                    </tr>
+                    <tr>
+                        <td class="col-name">Math Quiz</td>
+                        <td class="col-score">90%</td>
+                        <td class="col-date">2023-08-01</td>
+                        <td class="col-time">35 min</td>
+                    </tr>
+                    <tr>
+                        <td class="col-name">Math Quiz</td>
+                        <td class="col-score">90%</td>
+                        <td class="col-date">2023-08-01</td>
+                        <td class="col-time">35 min</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Account Settings</h2>
+
+            <div class="account">
+                <div class="account-box">
+                    <div class="account-email">
+                        <h4>Email</h4>
+                        <p>dannysdomainoriginal@gmail.com</p>
+                    </div>
+                    <div class="account-edit">
+                        <button class="btn edit-btn">
+                            <a href="./settings.html">Edit</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="account-box">
+                    <div class="account-password">
+                        <h4>Password</h4>
+                        <p>********</p>
+                    </div>
+                    <div class="account-edit">
+                        <button class="btn edit-btn">
+                            <a href="./settings.html">Edit</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="account-box">
+                    <button class="btn logout-btn">
+                        <a href="./logout">Log Out</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

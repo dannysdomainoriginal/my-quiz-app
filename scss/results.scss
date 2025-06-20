@@ -1,0 +1,140 @@
+@import './partials/component';
+
+.btn{
+    background-color: $theme-color;
+    height: 42px;
+    // width: 84px;
+    padding: 0 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.main{
+
+    .score{
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        background-color: $gray-color;
+
+        border-radius: 12px;
+
+        margin: 1.5rem 0;
+
+        h3{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        h2{
+            font-size: 2.5rem;
+            font-weight: 700;
+
+            font-family: $heading-font;
+        }
+
+    }
+
+    .tab{
+        // margin: 1rem 0;
+        display: flex;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        gap: 3rem;
+        // background-color: red;
+        // border-bottom: 1px solid $gray-color;
+
+        h4{
+            // border-bottom: 2px solid black;
+            position: relative;
+            font-weight: bolder;
+            color: #9099a4;
+            font-size: .9rem;
+
+            font-family: $heading-font;
+            cursor: pointer;
+
+            &.active{
+                color: black;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 120%;
+                    height: 2.5px;
+                    background-color: black;
+                    left: -10%;
+                    bottom: -1.1rem;
+                }
+            }
+
+        }
+    }
+
+    hr{
+        height: 1.4px;
+        background-color: $gray-color;
+        width: 102.5%;
+
+        // position: relative;
+        margin-left: -1.25%;
+    }
+
+    .answers-container{
+        padding: 1rem 0 2rem;
+
+        .box{
+            display: flex;
+            padding: .5rem 0;
+            gap: 1rem;
+
+            .check-box{
+                height: 50px;
+                width: 50px;
+                display: flex;
+
+                align-items: center;
+                justify-content: center;
+                background-color: $gray-color-secondary;
+                border-radius: 8px;
+
+                i{
+                    font-size: 1.5rem;
+                    color: $theme-color;
+                    color: $complementary-green;
+
+                    &.uil-times-circle{
+                        color: $complementary-red;
+                    }
+                }
+            }
+
+            .text-box{
+                display: flex;
+                flex-direction: column;
+                gap: .35rem;
+
+                padding: .2rem 0;
+
+                h3{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    font-family: $legend-font;
+                }
+
+                h4{
+                    font-size: .875rem;
+                    color: #75738A;
+                    align-self: baseline;
+                }
+            }
+        }
+    }
+}

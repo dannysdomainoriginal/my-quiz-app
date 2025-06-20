@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+     <nav class="nav">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" width="30px">
+                </div>
+                <h3>Quiz App</h3>
+            </div>
+            <div class="menu">
+                <ul class="menu-container">
+                    <li><a href="./dashboard">Dashboard</a></li>
+                    <li><a href="./quiz">Take A Quiz</a></li>
+                    <li><a href="./leaderboard">Leaderboard</a></li>
+                    <li><a href="./profile">Profile</a></li>
+                </ul>
+                    <button class="settings-btn"><i class="uil uil-setting"></i></button>
+                    <button class="theme-toggle-btn"><i class="uil uil-brightness"></i></button>
+                    <img src="./images/avatar.jpg" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container main-container">
+            <h1>Welcome, Charles!</h1>
+            <p>The only way to do great work is to love what you do. - Steve Jobs</p>
+
+            <div class="btn-container">
+                <button class="btn primary-btn" id="pre-gen-quiz">
+                    Start A Quiz
+                </button>
+                <button class="btn profile-btn">
+                    <a href="./profile.html">Past Quizzes</a>
+                </button>
+                <button class="btn premium-btn" id="ai-quiz">
+                    Generate AI Quiz
+                </button>
+            </div>
+
+            <article class="subjects">
+                <h2>Subjects</h2>
+                <div class="subjects-container">
+                    <div class="subject">
+                        <div class="img-box" data-subject="mathematics"></div>
+                        <h4>Mathematics</h4>
+                    </div>
+                    <div class="subject">
+                        <div class="img-box" data-subject="science"></div>
+                        <h4>Science</h4>
+                    </div>
+                    <div class="subject">
+                        <div class="img-box" data-subject="history"></div>
+                        <h4>History</h4>
+                    </div>
+                    <div class="subject">
+                        <div class="img-box" data-subject="literature"></div>
+                        <h4>Literature</h4>
+                    </div>
+                    <div class="subject">
+                        <div class="img-box" data-subject="geography"></div>
+                        <h4>Geography</h4>
+                    </div>
+                    <div class="subject">
+                        <div class="img-box" data-subject="arts"></div>
+                        <h4>Arts</h4>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- ---------------------------------------------- MODAL ------------------------------------------- -->
+
+    <!-- Modal -->
+    <div class="modal" id="quizModal">
+        <div class="modal-content">
+            <button class="close" id="closeModalBtn">&times;</button>
+            <h2>Customize Your Quiz</h2>
+            <form>
+                <!-- Quiz Type Dropdown -->
+                <div class="form-group">
+                    <select id="quizType">
+                        <option>Choose Quiz Type</option>
+                        <option value="ai">AI</option>
+                        <option value="pre">Pre-generated Questions</option>
+                    </select>
+                </div>
+
+                <!-- Topic -->
+                <div class="form-group">
+                    <select>
+                        <option>Select Topic</option>
+                        <option>Math</option>
+                        <option>Science</option>
+                        <option>History</option>
+                    </select>
+                </div>
+
+                <!-- Question Count -->
+                <div class="form-group">
+                    <select>
+                        <option>Number of Questions</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                    </select>
+                </div>
+
+                <!-- Difficulty (conditionally shown) -->
+                <div class="form-group" id="difficultyGroup">
+                    <select>
+                        <option>Difficulty Level (AI Quizzes)</option>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </div>
+
+                <!-- Time Limit -->
+                <div class="form-group">
+                    <select>
+                        <option>Time Limit</option>
+                        <option>1 min</option>
+                        <option>5 min</option>
+                        <option>10 min</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="start-btn">Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/components/dashboard.js"></script>
+</body>
+</html>
