@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "rootDir": "./src",
+        "outDir": "./js",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "removeComments": true,
+        "strict": true,
+        "noEmitOnError": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+
+        "baseUrl": "./src",
+        "paths": {
+            "@models/*": ["models/"],
+            "@widgets/*": ["widgets/"],
+            "@utils/*": ["utils/"],
+            "@controllers/*": ["controllers/"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "js"]
+}
