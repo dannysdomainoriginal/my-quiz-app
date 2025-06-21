@@ -21,8 +21,8 @@
 
 ## Current To Dos
 - [x] Login & SignUp Page
-- [ ] Turn responsive
-- [ ] OOP Frontend Setup for quiz and then user
+- [x] Turn responsive
+- [x] OOP Frontend Setup for quiz and then user
 - [ ] Push to github
 - [ ] Deploy
 - [ ] Create new branch - fullstack
@@ -33,7 +33,7 @@
 - [ ] Send a forgot password link to user email, on forget password
 
 ## Do Now
-- [ ] Add labels to quiz modal
+- [x] Add labels to quiz modal
 - [x] Make take quiz button work on all pages
 - [x] Make menu responsive - bottom tabs or side menu
 - [x] Edit the padding of the containers
