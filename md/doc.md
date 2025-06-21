@@ -39,3 +39,27 @@
 - [x] Make take quiz button work on all pages
 - [x] Make menu responsive - bottom tabs or side menu
 - [x] Edit the padding of the containers
+
+## Next
+- [ ] Code quiz.html functionality
+- [ ] Use fake quiz data
+---
+- [ ] Code results page functionality
+- [ ] Use fake data
+---
+- [ ] Code account-settings functionality
+- [ ] Use fake data
+---
+- [ ] Code profile.html functionality
+- [ ] Use fake data
+---
+- [ ] Code leaderboard functionality
+- [ ] Use fake data
+---
+- [ ] Test review page
+- [ ] Dashboard page
+
+### Structure
+- widgets/progress-bar
+- widgets/quiz-gen
+- widgets/timer
