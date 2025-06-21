@@ -18,11 +18,13 @@
 - [ ] Replace links ( add the .html, remove when it's time for backend)
 - [ ] Generate loading screen with javascript on special pages load, keep in component folder
 - [ ] Add loading screen styling to a partial and import into _component.scss
+- [ ] Use import alias in ts, the compile alias in js with vite
 
 ## Current To Dos
 - [x] Login & SignUp Page
 - [x] Turn responsive
-- [x] OOP Frontend Setup for quiz and then user
+- [ ] OOP Frontend Setup for quiz and then user
+- [ ] Make quiz modal edittable by clicking any of the subjects
 - [ ] Push to github
 - [ ] Deploy
 - [ ] Create new branch - fullstack

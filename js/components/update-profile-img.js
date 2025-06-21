@@ -18,6 +18,7 @@ fileInput.addEventListener('change', (e) => {
         
         const reader = new FileReader();
         reader.onload = () => {
+            console.log(reader.result)
             profileImg.src = reader.result;
         };
         reader.readAsDataURL(file);

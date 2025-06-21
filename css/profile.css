@@ -382,17 +382,17 @@ select {
   align-items: center;
   margin: 1.5rem 0;
 }
-.main .container .account-email, .main .container .account-password {
+.main .container .account-username, .main .container .account-password {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
 }
-.main .container .account-email h4, .main .container .account-password h4 {
+.main .container .account-username h4, .main .container .account-password h4 {
   font-size: 1rem;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
 }
-.main .container .account-email p, .main .container .account-password p {
+.main .container .account-username p, .main .container .account-password p {
   font-size: 0.875rem;
   color: rgb(106, 116, 129);
   font-family: "Lexend", sans-serif;
