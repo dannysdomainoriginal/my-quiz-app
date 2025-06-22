@@ -272,9 +272,10 @@ select {
 }
 .main-container .progress-bar .progress {
   height: 100%;
-  width: 70%;
+  width: 0%;
   border-radius: inherit;
   background-color: rgb(96, 122, 251);
+  transition: 0.4s ease-out;
 }
 .main-container h3 {
   font-size: 1.15rem;

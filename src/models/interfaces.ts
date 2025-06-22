@@ -5,7 +5,7 @@ interface QuizInterface {
         noOfQuestions: number,
         // category: string,
         // difficulty: string,
-        timeLimit: string
+        timeLimit: number
     },
     questions: {
         QUESTION: "string",
@@ -13,12 +13,11 @@ interface QuizInterface {
         chosen: string,
         answer: string
     }[],
-    setChosen: (
-        array: {id: number, value: string}[]
-    ) => void, // sets chosen to each object in questions array with the done array from quiz Gen widget
+    setChosen: (array: Selected[]) => void, // sets chosen to each object in questions array with the done array from quiz Gen widget
     correct: number[],
     wrong: number[],
-    score: number
+    score: number,
+    emptyAnswers : () => void
 }
 
 interface UserInterface {
@@ -37,4 +36,14 @@ interface UserInterface {
         dateTaken: string,
         timeSpent: string
     }[] 
+}
+
+interface answerHandlerType {
+    array: Selected[]
+    pass: (id:number) => void
+    push: (params: Selected) => void
+    edit: (params: Selected) => void
+    check: (counter: number) => void
+    highlight: (target: HTMLParagraphElement) => void
+    send: () => Selected[]
 }

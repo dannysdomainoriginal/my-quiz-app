@@ -43,7 +43,7 @@ export const fetchQuestionsData = () => {
         id: 2008,
         settings: {
             noOfQuestions: 20,
-            timeLimit: "03:00",
+            timeLimit: 3 * 60,
         },
         questions: QUESTIONS
     }

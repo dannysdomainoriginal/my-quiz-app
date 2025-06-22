@@ -44,10 +44,11 @@
 
             .progress{
                 height: 100%;
-                width: 70%;
+                width: 0%;
 
                 border-radius: inherit;
                 background-color: $theme-color;
+                transition: .4s ease-out;
             }
         }
 

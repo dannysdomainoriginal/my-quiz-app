@@ -41,8 +41,8 @@
 - [x] Edit the padding of the containers
 
 ## Next
-- [ ] Code quiz.html functionality
-- [ ] Use fake quiz data
+- [x] Code quiz.html functionality
+- [x] Use fake quiz data
 ---
 - [ ] Code results page functionality
 - [ ] Use fake data

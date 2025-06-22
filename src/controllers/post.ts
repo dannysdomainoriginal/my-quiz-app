@@ -8,7 +8,7 @@ export const postSignInData = () => {
     location.href = './dashboard.html'
 }
 
-export const postSettingsData = () => {
+export const postSettingsData = (data: any) => {
     alert('Settings saved')
     location.href = './settings.html'
 }
@@ -18,9 +18,9 @@ export const postQuizSettings = () => {
     location.href = './quiz.html'
 }
 
-export const postQuizSessions = () => {
+export const postQuizSessions = (data: string) => {
     alert('Quiz has been logged successfully')
-    location.href = './quiz.html'
+    location.href = './profile.html'
 }
 
 export const logOut = () => {

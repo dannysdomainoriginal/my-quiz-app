@@ -1,4 +1,4 @@
-export default class Quiz {
+export default class QuizSession {
     id;
     settings;
     questions;
@@ -19,6 +19,11 @@ export default class Quiz {
             const { id, value } = update;
             if (this.questions[id])
                 this.questions[id].chosen = value;
+        }
+    }
+    emptyAnswers() {
+        for (const question of this.questions) {
+            question.chosen = null;
         }
     }
 }

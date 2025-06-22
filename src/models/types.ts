@@ -29,7 +29,7 @@ type Quiz = {
     id: number,
     settings: {
         noOfQuestions: number,
-        timeLimit?: string
+        timeLimit?: number
     }
     questions: Question[]
 }
@@ -66,3 +66,5 @@ type Profile = {
     completionRate: number,
     pastQuizzes: QuizData[] // should have a max of 10 objects, set it in backend
 }
+
+type Selected = {id: number, value: string}

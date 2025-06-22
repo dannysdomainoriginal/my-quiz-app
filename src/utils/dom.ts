@@ -1,10 +1,10 @@
 // Javascript Document Object Model
 const dom = (targetId: string) => {
-    let target = document.querySelectorAll(targetId)
+    let all = document.querySelectorAll(targetId) as NodeListOf<HTMLElement>
 
-    if(target.length == 1 ) return document.querySelector(targetId)
+    if(all.length == 1 ) return all[0] as HTMLElement
     
-    return target
+    return all
 }
 
 export default dom
