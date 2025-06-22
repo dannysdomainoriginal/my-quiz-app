@@ -37,6 +37,7 @@ export const fetchDashboardData = {
 
 export const fetchQuestionsData = () => {
     let data: StorageData = localStorage.getItem('QUESTIONSData') || '[]'
+    
     let QUESTIONS : Question[] = JSON.parse(data)
 
     let quiz : Quiz = {

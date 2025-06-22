@@ -3,8 +3,15 @@ import QuizSession from '../models/quiz.js'
 import {dom, answerHandler, alertUser } from '../utils/index.js'
 import render from '../widgets/render-question.js'
 import quizTimer from '../widgets/quiz-timer.js'
+import bigData from '../models/localStorageData.js'
+
+
+// stores big data
+if(!localStorage.getItem('QUESTIONSData')) bigData()
+
 
 const data = fetchQuestionsData()
+
 const Session = new QuizSession(data)
 
 // number of questions
