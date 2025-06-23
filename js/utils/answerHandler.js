@@ -20,10 +20,10 @@ export default class answerHandler {
     }
     push(params) {
         let check = this.array.some(item => item.id === params.id);
+        console.log(params, check);
         if (check)
             return this.edit(params);
         this.array.push(params);
-        console.log(this.array);
     }
     edit(params) {
         if (this.array[params.id])

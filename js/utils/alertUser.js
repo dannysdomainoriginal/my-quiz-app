@@ -15,6 +15,7 @@ const alertUser = (reason, questions, handler) => {
             postSettingsData('put data here');
     }
     function submitQuiz() {
+        localStorage.setItem('quiz-unique-id', questions.id);
         let answers = handler.send();
         if (answers.length != 0) {
             questions.setChosen(answers);

@@ -21,17 +21,20 @@ const alertUser = (reason: string, questions : QuizSession, handler : answerHand
     // Account Settings
     if (reason == 'Setting Rest') {
         let check = window.confirm('Save changes?')
-        if ( check ) postSettingsData('put data here')
+        if ( check ) postSettingsData('put data here') // pass in settings data
     }
 
 
     // Submit Quiz
     function submitQuiz () {
+        localStorage.setItem('quiz-unique-id', questions.id) // store id of question in localStorage
+        
         let answers = handler.send()
 
         if (answers.length != 0) {
             questions.setChosen(answers)
             console.log(answers, questions)
+
             postQuizSessions(JSON.stringify(questions))
         } else {
             console.log('Failed')

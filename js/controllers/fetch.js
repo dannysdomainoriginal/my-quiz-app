@@ -28,7 +28,7 @@ export const fetchDashboardData = {
         return Quote;
     }
 };
-export const fetchQuestionsData = () => {
+export const fetchQuestionsData = (questionId) => {
     let data = localStorage.getItem('QUESTIONSData') || '[]';
     let QUESTIONS = JSON.parse(data);
     let quiz = {
@@ -44,13 +44,13 @@ export const fetchQuestionsData = () => {
 export const fetchResultsData = () => {
     let results = {
         id: 2008,
-        score: 13,
+        score: 90,
         correct: [2, 4, 5, 7, 9, 10, 13, 15, 16, 19],
         wrong: [1, 3, 6, 8, 11, 12, 14, 17, 18, 20]
     };
     return results;
 };
-export const fetchTestReviewData = () => {
+export const fetchTestReviewData = (id) => {
     let data = localStorage.getItem('TESTREVIEWData') || '[]';
     let QUESTIONS = JSON.parse(data);
     let quiz = {
