@@ -20,7 +20,7 @@ export const postQuizSettings = () => {
 
 export const postQuizSessions = (data: string) => {
     alert('Quiz has been logged successfully')
-    location.href = './profile.html'
+    location.href = './your-results.html'
 }
 
 export const logOut = () => {

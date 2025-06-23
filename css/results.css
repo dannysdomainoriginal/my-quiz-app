@@ -304,6 +304,25 @@ select {
 .main .answers-container {
   padding: 1rem 0 2rem;
 }
+.main .answers-container .correct-boxes, .main .answers-container .wrong-boxes {
+  transition: display 0.5s ease-in;
+  display: none;
+  animation: opaque 1s forwards;
+}
+@keyframes opaque {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main .answers-container.correct .correct-boxes {
+  display: block;
+}
+.main .answers-container.wrong .wrong-boxes {
+  display: block;
+}
 .main .answers-container .box {
   display: flex;
   padding: 0.5rem 0;

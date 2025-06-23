@@ -35,7 +35,7 @@ export const fetchDashboardData = {
     }
 }
 
-export const fetchQuestionsData = () => {
+export const fetchQuestionsData = (questionId?: number) => {
     let data: StorageData = localStorage.getItem('QUESTIONSData') || '[]'
     
     let QUESTIONS : Question[] = JSON.parse(data)
@@ -55,7 +55,7 @@ export const fetchQuestionsData = () => {
 export const fetchResultsData = () => {
     let results : Results = {
         id: 2008,
-        score: 13,
+        score: 90,
         correct: [2, 4, 5, 7, 9, 10, 13, 15, 16, 19],
         wrong: [1, 3, 6, 8, 11, 12, 14, 17, 18, 20]
     }
@@ -63,7 +63,7 @@ export const fetchResultsData = () => {
     return results
 }
 
-export const fetchTestReviewData = () => {
+export const fetchTestReviewData = (id: number) => {
     let data: StorageData = localStorage.getItem('TESTREVIEWData') || '[]'
     let QUESTIONS : Question[] = JSON.parse(data)
 
@@ -81,7 +81,7 @@ export const fetchTestReviewData = () => {
 export const fetchLeaderboardData = () => {
     let data : StorageData = localStorage.getItem('LEADERBOARDData') || '[]'
 
-    let LeaderBoard : LeaderBoard= JSON.parse(data)
+    let LeaderBoard : LeaderBoard[] = JSON.parse(data)
 
     return LeaderBoard
 }

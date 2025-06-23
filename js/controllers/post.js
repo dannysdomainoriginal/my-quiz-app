@@ -16,7 +16,7 @@ export const postQuizSettings = () => {
 };
 export const postQuizSessions = (data) => {
     alert('Quiz has been logged successfully');
-    location.href = './profile.html';
+    location.href = './your-results.html';
 };
 export const logOut = () => {
     console.log('Logs has been deleted');

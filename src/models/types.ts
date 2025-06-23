@@ -37,7 +37,7 @@ type Quiz = {
 type LeaderBoard = {
     rank: number,
     accountName: string,
-    averageScore: string,
+    averageScore: number,
     noOfQuizzesTaken: number
 }
 
@@ -49,7 +49,7 @@ type QuizData = {
 }
 
 type Results = {
-    id: number,
+    id: number | string,
     score: number,
     correct: number[],
     wrong: number[]
@@ -64,6 +64,7 @@ type Profile = {
     quizzesTaken: number,
     averageScore: number,
     completionRate: number,
+    dateJoined: string
     pastQuizzes: QuizData[] // should have a max of 10 objects, set it in backend
 }
 

@@ -90,10 +90,32 @@
     .answers-container{
         padding: 1rem 0 2rem;
 
+
+        .correct-boxes, .wrong-boxes{
+            transition: display .5s ease-in;
+            display: none;
+            animation: opaque 1s forwards;
+        }
+
+        @keyframes opaque {
+            from {
+                opacity: 0;
+            }
+
+            to{
+                opacity: 1;
+            }
+        }
+
+        &.correct .correct-boxes { display: block;}
+        &.wrong .wrong-boxes { display: block;}
+
         .box{
             display: flex;
             padding: .5rem 0;
             gap: 1rem;
+
+            
 
             .check-box{
                 height: 50px;
