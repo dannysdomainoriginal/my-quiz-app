@@ -45,5 +45,5 @@ interface answerHandlerType {
     edit: (params: Selected) => void
     check: (counter: number) => void
     highlight: (target: HTMLParagraphElement) => void
-    send: () => Selected[]
+    send:  any //(quizLength: number) => Selected[]
 }

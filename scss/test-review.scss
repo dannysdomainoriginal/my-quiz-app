@@ -1,8 +1,6 @@
 @import './partials/component';
 
 .main{
-    // padding-top: 3rem;
-    margin-bottom: 3rem;
 
     &-container{
         & > h1{
@@ -67,6 +65,21 @@
             font-size: 1.15rem;
             font-family: $heading-font;
         }
+        
+        .quiz > p {
+            margin-top: .5rem;
+            display: none;
+
+            &.skipped{
+                display: block;
+                color: #e04b4b;
+            }
+
+            &.correctly{
+                display: block;
+                color: #3cb371;
+            }
+        }
 
         .quiz-container{
             padding: 1rem 0;
@@ -75,6 +88,18 @@
             display: flex;
             flex-direction: column;
             gap: 1.2rem;
+
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+            }
 
             label{
                 padding: 1rem;
@@ -96,6 +121,33 @@
                     font-size: 1rem;
                     font-family: $legend-font;
                 }
+            }
+
+            $border-correct: #3cb371;
+            $border-wrong: #e04b4b;
+            $bg-correct: #d1f2e2;
+            $bg-wrong: #fbe2e5;
+
+            .correct input, .wrong input{
+                display: none;
+            }
+
+            .correct {
+                background: $bg-correct;
+                border-color: $border-correct;
+                flex-direction: row-reverse;
+                justify-content: left;
+
+                i{color: $border-correct;}
+            }
+
+            .wrong{
+                background: $bg-wrong;
+                border-color: $border-wrong;
+                flex-direction: row-reverse;
+                justify-content: left;
+
+                i{color: $border-wrong;}
             }
         }
 

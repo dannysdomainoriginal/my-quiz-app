@@ -25,7 +25,7 @@ const questions = Session.questions
 let counter = 0;
 let handler = new answerHandler();
 
-render(counter, questions, quizLength);
+render("Question Render", counter, questions, quizLength);
 
 [nextBtn, prevBtn].forEach(button => button.addEventListener('click', () => {
 
@@ -36,7 +36,7 @@ render(counter, questions, quizLength);
     if (button.classList.contains('next-btn') && counter <= quizLength) counter++ // next
     if (button.classList.contains('prev-btn') && counter >= 1) counter-- // prev
     
-    render(counter, questions, quizLength, handler)
+    render("Question Render", counter, questions, quizLength, handler)
     console.log(counter)
 
     if (counter == quizLength - 1) {

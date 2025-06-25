@@ -16,7 +16,7 @@ body{
     align-items: center;
     min-height: 100vh;
 
-    background-color: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    background: #d6dfffd4;
 }
 
 .container{
@@ -226,6 +226,15 @@ body{
 @media screen and (max-width: 650px) {
     .container{
         height: calc(100vh - 40px);
+
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: hidden;
+        margin: 0;
 
         .form-box{
             width: 100%;

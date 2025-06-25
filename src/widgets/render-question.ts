@@ -1,6 +1,7 @@
+import reviewHandler from 'utils/reviewHandler.js'
 import { answerHandler, dom, progressBar } from '../utils/index.js'
 
-const render = (counter: number, array: Question[], length: number, handler?: answerHandler) => {
+const render = (reason: string, counter: number, array: Question[], length: number, handler?: answerHandler | any) => {
     let question = array[counter]
 
     let {QUESTION, OPTIONS} = question
@@ -9,18 +10,34 @@ const render = (counter: number, array: Question[], length: number, handler?: an
     let nodeList = dom('.quiz-container p') as NodeListOf<HTMLElement>
     let optionsList = Array.from(nodeList).entries()
     let chosen = dom('input[name="quiz"]:checked') as HTMLInputElement | null;
-    let headingEl = dom('.above-progress-bar h4') as HTMLElement
 
     // render options
     for (const [index, el] of optionsList) {
         el.innerText = OPTIONS[index]
     }
 
-    questionEl.innerText = QUESTION
-    headingEl.innerText = `Question ${counter + 1} of ${length}`
-    progressBar([counter + 1, length])
+    // render questions or render test review
+    if (reason == "Question Render") {
 
-    if (handler) handler.check(counter)
+        let headingEl = dom('.above-progress-bar h4') as HTMLElement
+        headingEl.innerText = `Question ${counter + 1} of ${length}`
+        progressBar([counter + 1, length])
+        if (handler) handler.check(counter)
+
+    } else if (reason == "Test Review"){
+
+        if (handler) handler.clear() // clear previous review
+
+        let headingEl = dom('.main-container h1') as HTMLHeadingElement
+
+        headingEl.innerText = `Question ${counter + 1}`
+
+        if (handler) handler.correct(counter)
+        if (handler) handler.chosen(counter)
+    }
+
+    questionEl.innerText = QUESTION
+    
 }
 
 export default render 

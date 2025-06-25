@@ -14,7 +14,7 @@ const prevBtn = dom('.prev-btn');
 const questions = Session.questions;
 let counter = 0;
 let handler = new answerHandler();
-render(counter, questions, quizLength);
+render("Question Render", counter, questions, quizLength);
 [nextBtn, prevBtn].forEach(button => button.addEventListener('click', () => {
     if (counter == quizLength - 1 && button.classList.contains('next-btn'))
         return alertUser('Confirm Quiz Submission', Session, handler);
@@ -23,7 +23,7 @@ render(counter, questions, quizLength);
         counter++;
     if (button.classList.contains('prev-btn') && counter >= 1)
         counter--;
-    render(counter, questions, quizLength, handler);
+    render("Question Render", counter, questions, quizLength, handler);
     console.log(counter);
     if (counter == quizLength - 1) {
         nextBtn.innerText = 'Submit';

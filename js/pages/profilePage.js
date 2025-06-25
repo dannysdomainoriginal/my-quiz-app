@@ -1,0 +1,31 @@
+import { dom } from '../utils/index.js';
+import { fetchProfileData } from '../controllers/fetch.js';
+const { id, name, username, password, profilePicture, quizzesTaken, averageScore, completionRate, pastQuizzes, dateJoined } = fetchProfileData();
+let nameHeading = dom('.profile-text h4');
+let dateJoinedText = dom('.profile-text small');
+let quizTakenText = dom('.quizzes-taken');
+let avgScoreText = dom('.avg-score');
+let compRateText = dom('.comp-rate');
+let usernameText = dom('.account-username p');
+let resultRows = dom('.results-table tbody tr');
+nameHeading.innerText = name;
+dateJoinedText.innerText = `Joined ${dateJoined}`;
+quizTakenText.innerText = `${quizzesTaken}`;
+avgScoreText.innerText = `${averageScore}%`;
+compRateText.innerText = `${completionRate}%`;
+usernameText.innerText = username;
+var array = ['you', 'me'];
+array.forEach((i, value) => {
+    console.log(i + ' ' + value);
+});
+pastQuizzes.forEach((quiz, index) => {
+    let quizRow = resultRows[index];
+    const quizName = quizRow.querySelector('.col-name');
+    const quizScore = quizRow.querySelector('.col-score');
+    const quizDate = quizRow.querySelector('.col-date');
+    const quizTime = quizRow.querySelector('.col-time');
+    quizName.innerText = quiz.name;
+    quizScore.innerText = quiz.score;
+    quizDate.innerText = quiz.dateTaken;
+    quizTime.innerText = quiz.timeSpent;
+});

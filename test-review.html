@@ -7,6 +7,7 @@
 
     <!-- ICONSCOUT -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/test-review.css">
@@ -44,13 +45,18 @@
             <section class="quiz">
                 <h3 class="question">What is the capital of France?</h3>
 
+                <p class="no-answer">You skipped this one</p>
+                <p class="correct-answer">You answered this one correctly</p>
+
                 <div class="quiz-container">
-                    <label for="option1">
+                    <label for="option1" class="correct">
                         <input type="radio" name="quiz" id="option1">
+                        <i class="uis uis-check-circle"></i>
                         <p class="quiz-option" id="1">Paris</p>
                     </label>
-                    <label for="option2">
+                    <label for="option2" class="wrong">
                         <input type="radio" name="quiz" id="option2">
+                        <i class="uis uis-times-circle"></i>
                         <p class="quiz-option" id="1">Paris</p>
                     </label>
                     <label for="option3">
@@ -71,11 +77,11 @@
             </div>
 
             <div class="pagination-scroll-container">
-                <div class="pagination-arrow" onclick="scrollPagination(-100)">‹</div>
+                <div class="pagination-arrow left"><i class="uil uil-arrow-left"></i></div>
                 <div class="pagination-wrapper" id="paginationWrapper">
                     <div class="pagination-container" id="pagination"></div>
                 </div>
-                <div class="pagination-arrow" onclick="scrollPagination(100)">›</div>
+                <div class="pagination-arrow right"><i class="uil uil-arrow-right"></i></div>
             </div>
         </div>
     </main>
@@ -174,6 +180,7 @@
 
     <script src="./js/components/dashboard.js"></script>
 
-    <script src="./js/components/pagination.js"></script>
+    <!-- <script src="./js/components/pagination.js"></script> -->
+    <script type="module" src="./js/pages/testReviewPage.js"></script>
 </body>
 </html>

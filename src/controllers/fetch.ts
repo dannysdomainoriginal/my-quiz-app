@@ -18,18 +18,18 @@ export const fetchDashboardData = {
     subjects : () => {
         let subjects : Subject[] = [
             {name: "Mathematics", image: './images/mathematics.png'},
-            {name: "Arts", image: './images/arts.png'},
-            {name: "Geography", image: './images/geography.png'},
-            {name: "History", image: './images/history.png'},
             {name: "Science", image: './images/science.png'},
-            {name: "Literature", image: './images/literature.png'}
+            {name: "History", image: './images/history.png'},
+            {name: "Literature", image: './images/literature.png'},
+            {name: "Geography", image: './images/geography.png'},
+            {name: "Arts", image: './images/arts.png'}
         ]
 
         return subjects
     },
 
     quote : () =>  {
-        let Quote : Quote = 'New Quote: The only way to do great work is to love what you do'
+        let Quote : Quote = 'The only way to do great work is to love what you do'
 
         return Quote
     }

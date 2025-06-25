@@ -1,0 +1,15 @@
+const Switcheroo = () => {
+    const container = document.querySelector('.container') as HTMLDivElement
+    const registerBtn = document.querySelector('.register-btn') as HTMLButtonElement
+    const loginBtn = document.querySelector('.login-btn') as HTMLButtonElement
+
+    registerBtn.addEventListener('click', () => {
+        container.classList.add('active')
+    })
+
+    loginBtn.addEventListener('click', () => {
+        container.classList.remove('active')
+    })
+}
+
+export default Switcheroo
