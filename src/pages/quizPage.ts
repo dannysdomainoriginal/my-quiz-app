@@ -7,7 +7,7 @@ import bigData from '../models/localStorageData.js'
 
 
 // stores big data
-if(!localStorage.getItem('QUESTIONSData')) bigData()
+bigData()
 
 
 const data = fetchQuestionsData()
