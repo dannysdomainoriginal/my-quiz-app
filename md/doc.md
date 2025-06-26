@@ -40,7 +40,8 @@
 - [x] Make take quiz button work on all pages
 - [x] Make menu responsive - bottom tabs or side menu
 - [x] Edit the padding of the containers
-- [ ] Add opacity transition on page load
+- [x] Add opacity transition on page load for results page
+- [ ] Add fetch functionalities, learn axios then implement properly
 
 ## Next
 - [x] Code quiz.html functionality
