@@ -5,7 +5,6 @@ import render from '../widgets/render-question.js'
 import quizTimer from '../widgets/quiz-timer.js'
 import bigData from '../models/localStorageData.js'
 
-
 // stores big data
 bigData()
 

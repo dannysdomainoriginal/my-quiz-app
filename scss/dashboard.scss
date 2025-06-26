@@ -61,6 +61,18 @@
         background: linear-gradient(135deg, #ff8a00, #e52e71);
     }
 
+    @media screen and (max-width: 780px) {
+        .premium-btn{
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
+            color: white;
+        }
+
+        .profile-btn{
+            background-color: black;
+            color: white;
+        }
+    }
+
     .subjects{
         margin-bottom: 3rem;
         h2{

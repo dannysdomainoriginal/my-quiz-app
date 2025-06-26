@@ -288,6 +288,16 @@ select {
 .main .premium-btn:hover {
   background: linear-gradient(135deg, #ff8a00, #e52e71);
 }
+@media screen and (max-width: 780px) {
+  .main .premium-btn {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+  }
+  .main .profile-btn {
+    background-color: black;
+    color: white;
+  }
+}
 .main .subjects {
   margin-bottom: 3rem;
 }
