@@ -182,4 +182,16 @@ section .container, main .container{
 }
 
 @import './modal';
-@import './dark';
+// @import './dark';
+
+// Editing root sizing
+:root{
+
+    @media screen and (max-width: 760px) {
+        font-size: 15px;
+    }
+
+     @media screen and (max-width: 540px) {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,38 @@
+h1, h2, h3, h4, p, a, i{
+    color: whitesmoke;
+}
+
+$dark-bg: #222;
+
+body{
+    background: invert(white, 90%);
+}
+
+.theme-toggle-btn{
+    color: black !important;
+}
+
+html body {
+    .main .main-container{
+
+        .profile-btn{
+            background: white;
+            color: black;
+
+            a{color: black;}
+        }
+    }
+
+    .nav .nav-container{
+        a{
+            color: rgb(215, 215, 215);
+        }
+        a:hover{
+            color: white !important;
+        }
+    }
+}
+
+.mobile-nav{
+    background: $dark-bg;
+}

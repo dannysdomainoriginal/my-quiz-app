@@ -239,6 +239,17 @@ select {
   display: none;
 }
 
+@media screen and (max-width: 760px) {
+  :root {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 540px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
 .main .container .table-container {
   container-type: inline-size;
   width: 100%;
