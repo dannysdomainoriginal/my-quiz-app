@@ -14,7 +14,8 @@ const data = fetchQuestionsData()
 const Session = new QuizSession(data)
 
 // number of questions
-const quizLength = Session.questions.length || Session.settings.noOfQuestions
+const newValue = 5
+const quizLength = newValue || Session.questions.length || Session.settings.noOfQuestions
 
 // navigation buttons
 const nextBtn = dom('.next-btn') as HTMLButtonElement
